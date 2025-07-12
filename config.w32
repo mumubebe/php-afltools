@@ -1,0 +1,7 @@
+ARG_ENABLE('afltools', 'afltools support', 'no');
+
+if (PHP_AFLTOOLS != 'no') {
+	AC_DEFINE('HAVE_AFLTOOLS', 1, "Define to 1 if the PHP extension 'afltools' is available.");
+
+	EXTENSION('afltools', 'afltools.c', null, '/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1');
+}
