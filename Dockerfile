@@ -81,7 +81,7 @@ RUN git clone https://github.com/mumubebe/php-afltools.git
 RUN mkdir /fuzz
 RUN mv php-afltools/examples /fuzz
 
-RUN mv php-afltools /php-src/ext
+RUN mv php-afltools/ext/ /php-src/ext
 
 # Add more extensions if needed
 RUN cd /php-src && \
