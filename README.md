@@ -1,8 +1,8 @@
 **php-afltools** is a set of tools to make fuzzing PHP's Zend engine simple and efficient
 
 - Instrument AFL++ directly in PHP code with simple function calls
-- Specifically designed to fuzz PHP's core engine and extensions
-- Efficient fuzzing with AFL's persistent mode for faster execution
+- fuzz PHP's zend engine, libraries and extensions
+- AFL's persistent mode implemented 
 - Drop-in extension that works with existing PHP codebases
 - FuzzedDataProvider class: Built-in data provider for structured fuzzing of multiple data types
 
