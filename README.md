@@ -30,6 +30,10 @@ git clone https://github.com/mumubebe/php-afltools.git
 cd php-afltools/
 docker build -t afltools .
 docker run -it afltools bash
+
+# run an example
+cd examples/cdata_sections
+chmod +x run.sh && ./run.sh
 ```
 
 ## Manual adding extensions to the PHP source tree 
